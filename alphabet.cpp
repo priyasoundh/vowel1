@@ -1,14 +1,15 @@
-#include<iostream.h>
-#include<stdio.h>
-void main()
+#include <iostream>
+using namespace std;
+
+int main()
 {
-char a;
-cout<<"enter an alphabet";
-if('a'<=a<='z)
-{
-   cout<<"alphabet";
- }
- else
- cout<<"number";
- getch();
- }
+	char a;
+	cin>>a;
+	if(a>='a'&&a<='z'||a>='A'&&a<='Z')
+	{
+		cout<<"Alphabet";
+	}
+	else
+		cout<<"No";
+   return 0;
+}
